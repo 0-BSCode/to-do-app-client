@@ -6,11 +6,26 @@
   box-sizing: border-box;
 }
 
+/* 
+Declare global variables here for now and use them in
+the different CSS files for each component
+*/
+
+:root {
+  --blue: hsl(0, 100%, 48%);
+}
+
+@font-face {
+  font-family: Josefin;
+  src: url('./fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: Josefin;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
