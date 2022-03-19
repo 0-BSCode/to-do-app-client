@@ -12,7 +12,24 @@ the different CSS files for each component
 */
 
 :root {
-  --blue: hsl(0, 100%, 48%);
+  font-size: 18px;
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  /* Light Theme */
+  --vl-gray: hsl(0, 0%, 98%);
+  --vl-gray-blue: hsl(236, 33%, 92%);
+  --l-gray-blue: hsl(233, 11%, 84%);
+  --d-gray-blue: hsl(236, 9%, 61%);
+  --vd-gray-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --vd-blue: hsl(235, 21%, 11%);
+  --vd-desat-blue: hsl(235, 24%, 19%);
+  --l-gray-blue_dark: hsl(234, 39%, 85%);
+  --l-gray-blue_dark-hover: hsl(236, 33%, 92%);
+  --d-gray-blue_dark: hsl(234, 11%, 52%);
+  --vd-gray-blue_dark: hsl(233, 14%, 35%);
+  --vd-gray-blue_dark2: hsl(237, 14%, 26%);
 }
 
 @font-face {
