@@ -1,11 +1,10 @@
 import './App.css';
 import Header from './components/Header/Header';
-import theme from "./images/icon-sun.svg";
 import deleteIcon from "./images/icon-cross.svg";
 
 function App() {
   return (
-    <div className="appTest">
+    <div className="App">
       <Header />
       <main className="list">
         <form>
