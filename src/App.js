@@ -1,22 +1,12 @@
 import './App.css';
+import Header from './components/Header/Header';
 import theme from "./images/icon-sun.svg";
 import deleteIcon from "./images/icon-cross.svg";
 
 function App() {
   return (
     <div className="appTest">
-      <header className="header">
-        <h1 className="title">
-          TODO
-        </h1>
-        <button className="theme">
-          <img 
-            className="theme__img"
-            src={theme}
-            alt="Sun"
-          />
-        </button>
-      </header>
+      <Header />
       <main className="list">
         <form>
           <label>
