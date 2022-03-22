@@ -1,26 +1,16 @@
 import React from 'react'
 import AddTask from './AddTask/AddTask'
 import Tasks from './Tasks/Tasks'
+import TaskFilter from './TaskFilter/TaskFilter'
+import DragTask from './DragTask/DragTask'
 
 const Body = () => {
   return (
     <main className="allTasks">
       <AddTask />
       <Tasks />
-      <section>
-        <button>
-          All
-        </button>
-        <button>
-          Active
-        </button>
-        <button>
-          Completed
-        </button>
-      </section>
-      <section>
-        Drag and drop to reorder list
-      </section>
+      <TaskFilter />
+      <DragTask />
     </main>
   )
 }

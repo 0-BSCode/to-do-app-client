@@ -1,5 +1,6 @@
 import React from 'react'
 import Task from '../Task/Task'
+import TaskInfo from '../TaskInfo/TaskInfo';
 
 const Tasks = () => {
   return (
@@ -8,14 +9,7 @@ const Tasks = () => {
       <Task />
       <Task />
       <Task />
-      <li>
-        <p>
-          3 items left
-        </p>
-        <p>
-          Clear completed
-        </p>
-      </li>
+      <TaskInfo />
     </ul>
   )
 }
