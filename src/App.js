@@ -1,16 +1,14 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Body />
-      <footer>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </footer>
+      <Footer />
     </div>
   );
 }
