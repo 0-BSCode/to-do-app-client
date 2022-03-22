@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    text-transform: uppercase;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+}
