@@ -1,0 +1,16 @@
+.info {
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.1rem;
+}
+
+.info__left,
+.info__clear {
+    font-size: 0.7rem;
+    letter-spacing: 0.01rem;
+    border: none;
+    background: none;
+    font-family: Josefin;
+}

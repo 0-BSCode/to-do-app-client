@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.css';
 
 const TaskInfo = () => {
   return (
@@ -6,9 +7,9 @@ const TaskInfo = () => {
       <p className="info__left">
         3 items left
       </p>
-      <p className="info__clear">
+      <button className="info__clear">
         Clear completed
-      </p>
+      </button>
     </li>
   )
 }

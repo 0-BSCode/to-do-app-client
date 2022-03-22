@@ -1,0 +1,52 @@
+.task {
+    border-bottom: solid 1px black;
+}
+
+.task__container {
+    display: grid;
+    grid-template-columns: 85% auto;
+    align-items: center;
+    padding-inline: 1.1rem;
+    justify-content: space-between;
+    height: 2.7rem;
+}
+
+.task__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.task__input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.task__checkbox {
+    top: 0;
+    left: 0;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.task__text {
+    font-size: 0.7rem;
+    letter-spacing: 0.01rem;
+    margin-left: 0.7rem;
+}
+
+.task__delete-btn {
+    background: none;
+    border: none;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.task__delete-img {
+    height: 100%;
+}

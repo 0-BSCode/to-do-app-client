@@ -1,19 +1,18 @@
 import React from 'react'
+import './styles.css'
 
 const AddTask = () => {
   return (
-    <form className="form">
-      <label className="form__container">
-        <button 
-          type="submit"
-          className="form__submit" />
-        <input 
-          className="form__input"
-          type="text" 
-          placeholder="Create a new todo..."
-        />
-      </label>
-    </form>
+    <label className="form">
+      <button 
+        className="form__submit" 
+      />
+      <input 
+        className="form__input"
+        type="text" 
+        placeholder="Create a new todo..."
+      />
+    </label>
   )
 }
 
