@@ -1,5 +1,5 @@
 .App {
-  background-image: url("./images/bg-mobile-light.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 18rem;
+  margin-inline: auto;
+  margin-top: 2.5rem;
 }

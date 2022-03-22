@@ -40,4 +40,9 @@ the different CSS files for each component
 
 body {
     font-family: Josefin;
+    min-height: 100vh;
+    display: block;
+    background-image: url("./images/bg-mobile-light.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
