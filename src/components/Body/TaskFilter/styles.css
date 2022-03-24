@@ -14,5 +14,11 @@
     font-family: Josefin;
     font-weight: 700;
     font-size: 0.75rem;
+    color: var(--d-gray-blue);
     letter-spacing: 0.01rem;
+}
+
+.filter__btn:hover {
+    color: black;
+    cursor: pointer;
 }

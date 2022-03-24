@@ -1,5 +1,5 @@
 .info {
-    height: 2.7rem;
+    height: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,4 +13,10 @@
     border: none;
     background: none;
     font-family: Josefin;
+    color: var(--d-gray-blue);
+}
+
+.info__clear:hover {
+    color: black;
+    cursor: pointer;
 }
