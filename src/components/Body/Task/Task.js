@@ -12,7 +12,7 @@ const Task = () => {
             type="checkbox"
           />
           <span
-            className="task__checkbox" />
+            className="task__checkbox task__checkbox--finished" />
           <p className="task__text">
             Task
           </p>

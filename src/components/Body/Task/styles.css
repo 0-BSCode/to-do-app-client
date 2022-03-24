@@ -34,6 +34,7 @@
     border-radius: 50%;
     border: solid 0.01rem var(--l-gray-blue);
     position: relative;
+    z-index: 1;
 }
 
 .task__checkbox:hover {
@@ -53,12 +54,18 @@
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 50%;
+    z-index: 0;
 }
 
 .task__text {
     font-size: 0.7rem;
     letter-spacing: 0.01rem;
     margin-left: 0.7rem;
+}
+
+.task__text--finished {
+    color: var(--l-gray-blue);
+    text-decoration: line-through;
 }
 
 .task__text:hover {
