@@ -5,7 +5,7 @@ export default (tasks=[], action) => {
         case 'DELETE':
             return tasks.filter(task => task.name != action.payload);
         case 'FINISHED':
-            return tasks.map(task => task.name == action.payload? task.finished = true: '');
+            return tasks.map(task => task.name == action.payload? task.finished = !task.finished: '');
         default:
             return tasks;
     }
