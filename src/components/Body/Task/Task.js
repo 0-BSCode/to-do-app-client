@@ -18,8 +18,7 @@ const Task = ({task}) => {
       console.log("Data: ", input.getAttribute("dataname"));
       console.log("Task: ", task.name);
       console.log("\n");
-      if ((dataName == task.name && zIndex  == 0) ||
-      (dataName != task.name && zIndex == -1)) {
+      if ((dataName == task.name && zIndex  == 0)) {
         input.style.setProperty("--z-index", "-1");
       } else {
         input.style.setProperty("--z-index", "0");
@@ -27,22 +26,12 @@ const Task = ({task}) => {
     })
   }
 
-  // Issue: When one button is checked, all the other buttons get deselected
+  // Issue: When one button is checked, all the other buttons get unchecked
 
   const deleteEvent = e => {
     e.preventDefault();
     dispatch(Delete(task.name));
   }
-
-  // useEffect(() => {
-  //     // const zIndex = input.style.getPropertyValue("--z-index");
-  //     // if (zIndex == 0 && task.finished) {
-  //     //   input.style.setProperty("--z-index", "-1");
-  //     // } else {
-  //     //   input.style.setProperty("--z-index", "0");
-  //     // }
-  //   })
-  // }, [task])
 
   return (
     <li className="task">
