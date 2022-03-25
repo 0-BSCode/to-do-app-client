@@ -34,7 +34,7 @@
     border-radius: 50%;
     border: solid 0.01rem var(--l-gray-blue);
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .task__checkbox:hover {
@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-.task__checkbox::after {
+.task__checkbox::before {
     content: '';
     position: absolute;
     height: 0.95rem;
@@ -54,7 +54,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 50%;
-    z-index: 0;
+    z-index: var(--z-index);
 }
 
 .task__text {

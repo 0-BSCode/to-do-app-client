@@ -31,6 +31,8 @@ the different CSS files for each component
   --d-gray-blue_dark: hsl(234, 11%, 52%);
   --vd-gray-blue_dark: hsl(233, 14%, 35%);
   --vd-gray-blue_dark2: hsl(237, 14%, 26%);
+
+  --z-index: 0;
 }
 
 @font-face {
