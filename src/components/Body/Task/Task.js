@@ -27,6 +27,8 @@ const Task = ({task}) => {
     })
   }
 
+  // Issue: When one button is checked, all the other buttons get deselected
+
   const deleteEvent = e => {
     e.preventDefault();
     dispatch(Delete(task.name));
