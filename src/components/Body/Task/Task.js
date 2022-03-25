@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import deleteIcon from "../../../images/icon-cross.svg";
 import './styles.css';
 
-const Task = () => {
+const Task = ({task}) => {
   return (
     <li className="task">
       <label className="task__container">
@@ -14,7 +14,7 @@ const Task = () => {
           <span
             className="task__checkbox task__checkbox--finished" />
           <p className="task__text">
-            Task
+            {task.name}
           </p>
         </div>
         <button className="task__delete-btn">
