@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Task from '../Task/Task'
 import TaskInfo from '../TaskInfo/TaskInfo';
 import './styles.css';
@@ -6,7 +6,6 @@ import {useSelector} from 'react-redux';
 
 const Tasks = () => {
   const tasks = useSelector(state => state.tasks);
-  const [filteredTasks, setFilteredTasks] = useState(tasks);
 
   useEffect(() => {
     const taskText = document.querySelectorAll(".task__text");
