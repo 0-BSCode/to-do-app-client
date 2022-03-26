@@ -9,19 +9,24 @@ import {useState} from 'react'
 const Body = () => {
   const tasks = useSelector(state => state.tasks);
   const [filteredTasks, setFilteredTasks] = useState(tasks);
+  const [filter, setFilter] = useState('All');
 
   useEffect(() => {
-    // setFilteredTasks(tasks);
-    console.log(filteredTasks);
+    if (filter == 'Complete') {
+      setFilteredTasks(tasks.filter(task => task.finished == true));
+    } else if (filter == 'Active') {
+      setFilteredTasks(tasks.filter(task => task.finished == false));
+    } else {
+      setFilteredTasks(tasks);
+    }
   })
 
   return (
     <main className="allTasks">
       <AddTask />
-      <Tasks />
+      <Tasks tasks={filteredTasks} />
       <TaskFilter 
-      filteredTasks={filteredTasks}
-      setFilteredTasks={setFilteredTasks}/>
+      setFilter={setFilter}/>
       <DragTask />
     </main>
   )

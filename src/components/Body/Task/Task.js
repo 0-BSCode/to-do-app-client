@@ -11,11 +11,7 @@ const Task = ({task}) => {
   const finishEvent = (e) => {
     dispatch(Finished(task.name));
   }
-
-  // Issue 1: When one button is checked, all the other buttons get deselected
-  // Issue 2: If two tasks have the same text, the same actions will be performed on both
-  // Suggestion: Restructure state to be a taskName: taskFinished object for
-  // easy searching
+  
   const deleteEvent = e => {
     e.preventDefault();
     dispatch(Delete(task.name));

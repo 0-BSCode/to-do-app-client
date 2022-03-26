@@ -1,37 +1,27 @@
 import React from 'react'
 import './styles.css';
 
-const TaskFilter = ({filteredTasks, setFilteredTasks}) => {
-  const returnAll = e => {
+const TaskFilter = ({setFilter}) => {
+  const handleClick = e => {
     e.preventDefault();
-    setFilteredTasks(filteredTasks);
-  }
-
-  const returnActive = e => {
-    e.preventDefault();
-    setFilteredTasks(filteredTasks.filter(task => !task.finished));
-  }
-
-  const returnCompleted = e => {
-    e.preventDefault();
-    setFilteredTasks(filteredTasks.filter(task => task.finished));
+    setFilter(e.target.textContent);
   }
 
   return (
     <section className="filter">
       <button 
         className="filter__btn"
-        onClick={returnAll}>
+        onClick={handleClick}>
         All
       </button>
       <button 
         className="filter__btn"
-        onClick={returnActive}>
+        onClick={handleClick}>
         Active
       </button>
       <button 
         className="filter__btn"
-        onClick={returnCompleted}>
+        onClick={handleClick}>
         Completed
       </button>
     </section>

@@ -4,10 +4,11 @@ import TaskInfo from '../TaskInfo/TaskInfo';
 import './styles.css';
 import {useSelector} from 'react-redux';
 
-const Tasks = () => {
-  const tasks = useSelector(state => state.tasks);
+const Tasks = ({tasks}) => {
+  // const tasks = useSelector(state => state.tasks);
 
   useEffect(() => {
+    console.log(tasks);
     const taskText = document.querySelectorAll(".task__text");
     let ctr = 0;
     for (;ctr < taskText.length; ctr++) {
