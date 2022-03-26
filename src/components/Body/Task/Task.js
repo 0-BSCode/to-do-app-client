@@ -34,9 +34,9 @@ const Task = ({task}) => {
             className="task__checkbox"
             dataname={task.name}
             onClick={finishEvent} />
-          <p className="task__text">
+          <div className="task__text">
             {task.name}
-          </p>
+          </div>
         </div>
         <button 
           className="task__delete-btn"
