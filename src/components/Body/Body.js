@@ -14,7 +14,7 @@ const Body = () => {
   return (
     <main className="allTasks">
       <AddTask />
-      <Tasks tasks={filter == "All"? tasks: filteredTasks} />
+      <Tasks filteredTasks={filter == "All"? tasks: filteredTasks} />
       <TaskFilter 
       setFilter={setFilter}
       setFilteredTasks={setFilteredTasks}/>
