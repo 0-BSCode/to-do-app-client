@@ -11,7 +11,7 @@ const Task = ({task}) => {
   const finishEvent = (e) => {
     dispatch(Finished(task.name));
   }
-  
+
   const deleteEvent = e => {
     e.preventDefault();
     dispatch(Delete(task.name));
@@ -29,6 +29,7 @@ const Task = ({task}) => {
             type="checkbox"
             id={task.name}
             name={task.name}
+            checked={task.finished}
           />
           <span
             className="task__checkbox"
