@@ -9,8 +9,12 @@ const AddTask = () => {
 
   const submitTask = e => {
     e.preventDefault();
+    let alreadyAdded = false;
     const input = document.querySelector('.form__input');
-    if (input.value != '') dispatch(Add(input.value));
+    tasks.forEach(task => {
+      input.value == task.name? alreadyAdded = true: alreadyAdded = false;
+    })
+    if (input.value != '' && !alreadyAdded) dispatch(Add(input.value));
     input.value = '';
   }
 
