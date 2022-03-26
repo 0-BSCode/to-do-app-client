@@ -18,9 +18,8 @@ export default App;
 
 /*
 
-COMPONENT LAYERING
-- App (container)
-  - Header (title + toggle + add task)
-  - Body (task list + task actions + reorder line)
-  - Footer (attribution)
+ISSUES:
+1. When filter aside from all = selected, clicking on task 
+doesn't reflect on display
+2. Beyond a certain string length, radio button deforms
 */
