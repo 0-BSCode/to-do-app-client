@@ -26,6 +26,17 @@
     cursor: pointer;
 }
 
+.task__input:checked ~ .task__checkbox {
+    background-image: url("../../../images/icon-check.svg"),var(--check-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.task__input:checked ~ .task__checkbox::before {
+    display: none;
+}
+
 .task__checkbox {
     top: 0;
     left: 0;
@@ -34,7 +45,6 @@
     border-radius: 50%;
     border: solid 0.01rem var(--l-gray-blue);
     position: relative;
-    /* z-index: 1; */
 }
 
 .task__checkbox:hover {

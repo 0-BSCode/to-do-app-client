@@ -18,10 +18,6 @@ const AddTask = () => {
     input.value = '';
   }
 
-  useEffect(() => {
-    console.log(tasks);
-  })
-
   return (
     <label className="form">
       <button 
