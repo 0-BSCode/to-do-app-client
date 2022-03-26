@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import deleteIcon from "../../../images/icon-cross.svg";
 import './styles.css';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {Delete, Finished} from '../../../actions/tasks';
 
 const Task = ({task}) => {
   const dispatch = useDispatch();
-  const tasks = useSelector(state => state.tasks);
 
-  const finishEvent = (e) => {
+  const finishEvent = () => {
     dispatch(Finished(task.name));
   }
 
