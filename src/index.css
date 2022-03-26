@@ -55,4 +55,5 @@ body {
     background-image: var(--bg-image);
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all 0.2s;
 }
