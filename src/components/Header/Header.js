@@ -15,13 +15,20 @@ const Header = () => {
     const themeImg = document.querySelector(".theme-img");
     const rootGetter = getComputedStyle(document.documentElement);
     const rootSetter = document.documentElement.style;
-    console.log(rootGetter.getPropertyValue("--bright-blue"));
+
     if (light) {
       themeImg.setAttribute('src', `${moonIcon}`);
-      rootSetter.setProperty("--vl-gray", "white");
+      rootSetter.setProperty("--bg-image", rootGetter.getPropertyValue("--bg-image-light"));
+      rootSetter.setProperty("--bg-color", rootGetter.getPropertyValue("--vl-gray"));
+      rootSetter.setProperty("--card-bg-color", "white");
+      rootSetter.setProperty("--task-text-color", rootGetter.getPropertyValue("--vd-gray-blue"));
     } else {
       themeImg.setAttribute('src', `${sunIcon}`);
-      rootSetter.setProperty("--vl-gray", "black");
+      rootSetter.setProperty("--bg-image", rootGetter.getPropertyValue("--bg-image-dark"));
+      rootSetter.setProperty("--bg-color", rootGetter.getPropertyValue("--vd-blue"));
+      rootSetter.setProperty("--card-bg-color", rootGetter.getPropertyValue("--vd-desat-blue"));
+      rootSetter.setProperty("--task-text-color", rootGetter.getPropertyValue("--l-gray-blue_dark"));
+
     }
   })
 

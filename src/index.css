@@ -32,10 +32,13 @@ the different CSS files for each component
   --d-gray-blue_dark: hsl(234, 11%, 52%);
   --vd-gray-blue_dark: hsl(233, 14%, 35%);
   --vd-gray-blue_dark2: hsl(237, 14%, 26%);
-  --bg-image-light: url("./images/bg-mobile-dark.jpg");
+  --bg-image-dark: url("./images/bg-mobile-dark.jpg");
 
   /* Variables actually used */
   --bg-image: var(--bg-image-light);
+  --bg-color: var(--vl-gray);
+  --card-bg-color: white;
+  --task-text-color: var(--vd-gray-blue);
   --z-index: 0;
 }
 
@@ -48,7 +51,7 @@ body {
     font-family: Josefin;
     min-height: 100vh;
     display: block;
-    background-color: var(--vl-gray);
+    background-color: var(--bg-color);
     background-image: var(--bg-image);
     background-size: contain;
     background-repeat: no-repeat;

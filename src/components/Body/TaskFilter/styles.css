@@ -1,6 +1,6 @@
 .filter {
     margin-top: 1rem;
-    background-color: white;
+    background-color: var(--card-bg-color);
     height: 2.7rem;
     border-radius: 0.4rem;
     display: flex;
@@ -21,4 +21,8 @@
 .filter__btn:hover {
     color: black;
     cursor: pointer;
+}
+
+.filter__btn--selected {
+    color: var(--bright-blue);
 }

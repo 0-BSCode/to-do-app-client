@@ -11,6 +11,17 @@ const Body = () => {
   const [filteredTasks, setFilteredTasks] = useState(tasks);
   const [filter, setFilter] = useState('All');
 
+  useEffect(() => {
+    const filterBtns = document.querySelectorAll(".filter__btn");
+    filterBtns.forEach(filterBtn => {
+      if (filterBtn.textContent == filter) {
+        filterBtn.classList.add("filter__btn--selected");
+      } else {
+        filterBtn.classList.remove("filter__btn--selected");
+      }
+    })
+  })
+
   return (
     <main className="allTasks">
       <AddTask />

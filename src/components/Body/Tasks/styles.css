@@ -1,6 +1,6 @@
 .tasks {
     list-style-type: none;
-    background-color: white;
+    background-color: var(--card-bg-color);
     border-radius: 0.4rem;
     margin-top: 1rem;
 }
