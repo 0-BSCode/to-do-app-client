@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Task from '../Task/Task'
 import TaskInfo from '../TaskInfo/TaskInfo';
 import './styles.css';
-import {useDispatch, useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 const Tasks = () => {
-  const dispatch = useDispatch();
   const tasks = useSelector(state => state.tasks);
-  
+  const [filteredTasks, setFilteredTasks] = useState(tasks);
+
   useEffect(() => {
-    console.log(tasks);
     const taskText = document.querySelectorAll(".task__text");
     let ctr = 0;
     for (;ctr < taskText.length; ctr++) {
@@ -20,6 +19,7 @@ const Tasks = () => {
       }
     }
   })
+
   return (
     <ul
       className="tasks">
