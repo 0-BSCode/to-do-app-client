@@ -11,9 +11,14 @@ const Tasks = () => {
   useEffect(() => {
     console.log(tasks);
     const taskText = document.querySelectorAll(".task__text");
-    taskText.forEach(taskText => {
-      console.log(taskText.textContent);
-    })
+    let ctr = 0;
+    for (;ctr < taskText.length; ctr++) {
+      if (tasks[ctr].finished) {
+        taskText[ctr].classList.add("task__text--finished");
+      } else {
+        taskText[ctr].classList.remove("task__text--finished");
+      }
+    }
   })
   return (
     <ul
