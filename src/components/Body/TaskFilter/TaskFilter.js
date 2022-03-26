@@ -1,10 +1,19 @@
 import React from 'react'
 import './styles.css';
+import { useSelector } from 'react-redux';
 
-const TaskFilter = ({setFilter}) => {
+const TaskFilter = ({setFilter, setFilteredTasks}) => {
+  const tasks = useSelector(state => state.tasks);
+
   const handleClick = e => {
     e.preventDefault();
     setFilter(e.target.textContent);
+    if (e.target.textContent == "Active") {
+      setFilteredTasks(tasks.filter(task => task.finished == false));
+    } else if (e.target.textContent == "Completed") {
+      setFilteredTasks(tasks.filter(task => task.finished == true));
+
+    }
   }
 
   return (

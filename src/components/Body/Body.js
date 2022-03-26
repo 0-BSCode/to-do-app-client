@@ -11,22 +11,13 @@ const Body = () => {
   const [filteredTasks, setFilteredTasks] = useState(tasks);
   const [filter, setFilter] = useState('All');
 
-  useEffect(() => {
-    if (filter == 'Complete') {
-      setFilteredTasks(tasks.filter(task => task.finished == true));
-    } else if (filter == 'Active') {
-      setFilteredTasks(tasks.filter(task => task.finished == false));
-    } else {
-      setFilteredTasks(tasks);
-    }
-  })
-
   return (
     <main className="allTasks">
       <AddTask />
-      <Tasks tasks={filteredTasks} />
+      <Tasks tasks={filter == "All"? tasks: filteredTasks} />
       <TaskFilter 
-      setFilter={setFilter}/>
+      setFilter={setFilter}
+      setFilteredTasks={setFilteredTasks}/>
       <DragTask />
     </main>
   )
