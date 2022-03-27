@@ -19,7 +19,7 @@
 }
 
 .filter__btn:hover {
-    color: black;
+    color: var(--text-hover-color);
     cursor: pointer;
 }
 

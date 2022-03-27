@@ -4,4 +4,15 @@
     left: 50%;
     transform: translate(-50%, 0);
     width: fit-content;
+    color: var(--task-text-color);
+}
+
+.attribution a {
+    color: var(--task-text-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--text-hover-color);
 }

@@ -12,7 +12,6 @@ const TaskFilter = ({setFilter, setFilteredTasks}) => {
       setFilteredTasks(tasks.filter(task => task.finished == false));
     } else if (e.target.textContent == "Completed") {
       setFilteredTasks(tasks.filter(task => task.finished == true));
-
     }
   }
 

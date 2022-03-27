@@ -22,13 +22,14 @@ const Header = () => {
       rootSetter.setProperty("--bg-color", rootGetter.getPropertyValue("--vl-gray"));
       rootSetter.setProperty("--card-bg-color", "white");
       rootSetter.setProperty("--task-text-color", rootGetter.getPropertyValue("--vd-gray-blue"));
+      rootSetter.setProperty("--text-hover-color", "black");
     } else {
       themeImg.setAttribute('src', `${sunIcon}`);
       rootSetter.setProperty("--bg-image", rootGetter.getPropertyValue("--bg-image-dark"));
       rootSetter.setProperty("--bg-color", rootGetter.getPropertyValue("--vd-blue"));
       rootSetter.setProperty("--card-bg-color", rootGetter.getPropertyValue("--vd-desat-blue"));
       rootSetter.setProperty("--task-text-color", rootGetter.getPropertyValue("--l-gray-blue_dark"));
-
+      rootSetter.setProperty("--text-hover-color", "white");
     }
   })
 
