@@ -16,6 +16,18 @@ const Task = ({task}) => {
     dispatch(Delete(task.name));
   }
 
+  const parseName = (taskName) => {
+    let lines = [];
+    const lineLength = 36;
+    for (let i = 0; i <= Math.floor(taskName.length / lineLength); i++) {
+      let start =  Math.min(taskName.length,i * lineLength);
+      let end = Math.min(taskName.length, start + lineLength);
+      lines.push(taskName.slice(start, end));
+    }
+
+    return lines;
+  }
+
   return (
     <li className="task">
       <label 
@@ -35,7 +47,9 @@ const Task = ({task}) => {
             dataname={task.name}
             onClick={finishEvent} />
           <div className="task__text">
-            {task.name}
+            {parseName(task.name).map(line => (
+              <p>{line}</p>
+            ))}
           </div>
         </div>
         <button 
