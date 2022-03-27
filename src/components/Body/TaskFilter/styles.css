@@ -23,6 +23,7 @@
     cursor: pointer;
 }
 
-.filter__btn--selected {
+.filter__btn--selected.filter__btn--selected {
     color: var(--bright-blue);
+    cursor: default;
 }

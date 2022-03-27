@@ -15,6 +15,7 @@ const Body = () => {
     filterBtns.forEach(filterBtn => {
       if (filterBtn.textContent == filter) {
         filterBtn.classList.add("filter__btn--selected");
+        filterBtn.classList.remove("filter__btn:hover");
       } else {
         filterBtn.classList.remove("filter__btn--selected");
       }
