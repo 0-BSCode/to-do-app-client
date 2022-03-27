@@ -20,6 +20,8 @@ export default App;
 
 ISSUES:
 1. Hover over filters changes their color even once their selected
+2. Drag and drop functionality
+3. Responsive design for desktop
 
 LEARNINGS:
 1. Color theme switching
