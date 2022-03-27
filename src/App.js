@@ -22,4 +22,5 @@ ISSUES:
 1. When filter aside from all = selected, clicking on task 
 doesn't reflect on display
 2. Beyond a certain string length, radio button deforms
+3. Hover over filters changes their color even once their selected
 */
