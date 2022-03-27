@@ -4,11 +4,21 @@ import TaskInfo from '../TaskInfo/TaskInfo';
 import './styles.css';
 import {useSelector} from 'react-redux';
 
-const Tasks = ({filteredTasks}) => {
+const Tasks = ({filter, filteredTasks}) => {
   const tasks = useSelector(state => state.tasks);
+  var filterTasks;
+
+  if (filter == 'All') {
+    filterTasks = tasks;
+  } else if (filter == 'Active') {
+    filterTasks = tasks.filter(task => !task.finished);
+  } else if (filter == 'Completed') {
+    filterTasks = tasks.filter(task => task.finished);
+  }
 
   useEffect(() => {
     const taskText = document.querySelectorAll(".task__text");
+
     let ctr = 0;
     for (;ctr < taskText.length; ctr++) {
       if (filteredTasks[ctr].finished) {
@@ -22,7 +32,7 @@ const Tasks = ({filteredTasks}) => {
   return (
     <ul
       className="tasks">
-      {filteredTasks.map(task => (
+      {filterTasks.map(task => (
         <Task task={task} key={task.name} />
       ))}
       <TaskInfo />
