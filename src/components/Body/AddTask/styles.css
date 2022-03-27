@@ -15,7 +15,7 @@
     border: none;
     height: 1.1rem;
     width: 1.1rem;
-    border: solid 0.01rem var(--l-gray-blue);
+    border: solid 0.01rem var(--border-color);
     background-color: white;
     position: relative;
 }
@@ -27,14 +27,14 @@
     cursor: pointer;
 }
 
-.form__submit::after {
+.form__submit::before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     content: '';
     width: 0.95rem;
-    height: 0.95rem;
+    height: 0.85rem;
     border-radius: 50%;
     background-color: var(--card-bg-color);
     z-index: 0;

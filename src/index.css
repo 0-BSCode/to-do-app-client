@@ -40,6 +40,7 @@ the different CSS files for each component
   --card-bg-color: white;
   --task-text-color: var(--vd-gray-blue);
   --text-hover-color: black;
+  --border-color: var(--l-gray-blue);
   --z-index: 0;
 }
 
