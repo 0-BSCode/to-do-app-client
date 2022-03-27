@@ -3,6 +3,6 @@
     text-align: center;
     font-size: 0.7rem;
     letter-spacing: 0.01rem;
-    color: var(--d-gray-blue);
+    color: var(--taskinfo-text-color);
     margin-bottom: 2.5rem;
 }

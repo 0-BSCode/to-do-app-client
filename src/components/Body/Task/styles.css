@@ -74,7 +74,7 @@
 }
 
 .task__text--finished {
-    color: var(--l-gray-blue);
+    color: var(--text-finished-color);
     text-decoration: line-through;
 }
 

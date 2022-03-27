@@ -14,7 +14,7 @@
     font-family: Josefin;
     font-weight: 700;
     font-size: 0.75rem;
-    color: var(--d-gray-blue);
+    color: var(--taskinfo-text-color);
     letter-spacing: 0.01rem;
 }
 
