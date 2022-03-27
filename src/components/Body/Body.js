@@ -8,7 +8,6 @@ import {useState} from 'react'
 
 const Body = () => {
   const tasks = useSelector(state => state.tasks);
-  const [filteredTasks, setFilteredTasks] = useState(tasks);
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
@@ -26,11 +25,9 @@ const Body = () => {
     <main className="allTasks">
       <AddTask />
       <Tasks 
-      filter={filter}
-      filteredTasks={filter == "All"? tasks: filteredTasks} />
+      filter={filter} />
       <TaskFilter 
-      setFilter={setFilter}
-      setFilteredTasks={setFilteredTasks}/>
+      setFilter={setFilter} />
       <DragTask />
     </main>
   )
