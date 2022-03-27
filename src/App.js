@@ -19,8 +19,7 @@ export default App;
 /*
 
 ISSUES:
-1. Beyond a certain string length, radio button deforms
-2. Hover over filters changes their color even once their selected
+1. Hover over filters changes their color even once their selected
 
 LEARNINGS:
 1. Color theme switching
