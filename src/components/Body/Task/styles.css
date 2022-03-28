@@ -10,6 +10,11 @@
     padding-inline: 1.1rem;
     justify-content: space-between;
     height: 3.2rem;
+    cursor: grab;
+}
+
+.task__container:active {
+    cursor: grabbing;
 }
 
 .task__info {

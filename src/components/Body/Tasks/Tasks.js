@@ -29,6 +29,20 @@ const Tasks = ({filter}) => {
     }
   })
 
+  
+  const draggables = document.querySelectorAll(".task__container");
+  draggables.forEach(draggable => {
+
+    draggable.addEventListener('dragstart', () => {
+      draggable.style.opacity = '0.4';
+    })
+
+    draggable.addEventListener('dragend', () => {
+      draggable.style.opacity = '1';
+    })
+
+  })
+
   return (
     <ul
       className="tasks">

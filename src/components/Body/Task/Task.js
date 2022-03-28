@@ -29,13 +29,17 @@ const Task = ({task}) => {
   }
 
   return (
-    <li className="task">
+    <li 
+      className="task" 
+      >
       <label 
         className="task__container"
         htmlFor={task.name}
+        draggable="true"
       >
         <div className="task__info">
           <input 
+            readOnly={true}
             className="task__input"
             type="checkbox"
             id={task.name}
