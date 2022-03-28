@@ -16,14 +16,35 @@ const TaskInfoDesktop = ({setFilter}) => {
     });
   }
 
+  const handleClick = e => {
+    e.preventDefault();
+    setFilter(e.target.textContent);
+  }
+
   return (
-    <li className="info">
-      <p className="info__left">
+    <li className="info--desktop">
+      <p className="info__left--desktop">
         {tasks.filter(task => !task.finished).length} items left
       </p>
-      <TaskFilter setFilter={setFilter}/>
+      <section className="filter--desktop">
+        <button 
+          className="filter__btn--desktop"
+          onClick={handleClick}>
+          All
+        </button>
+        <button 
+          className="filter__btn--desktop"
+          onClick={handleClick}>
+          Active
+        </button>
+        <button 
+          className="filter__btn--desktop"
+          onClick={handleClick}>
+          Completed
+        </button>
+      </section>
       <button 
-        className="info__clear"
+        className="info__clear--desktop"
         onClick={clearCompleted}
       >
         Clear completed
