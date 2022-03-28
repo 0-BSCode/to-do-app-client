@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 import Task from '../Task/Task'
 import TaskInfo from '../TaskInfo/TaskInfo';
+import TaskInfoDesktop from '../TaskInfoDesktop/TaskInfoDesktop';
 import './styles.css';
 import {useSelector} from 'react-redux';
 
-const Tasks = ({filter}) => {
+const Tasks = ({filter, setFilter}) => {
   const tasks = useSelector(state => state.tasks);
   var filterTasks;
 
@@ -100,6 +101,7 @@ const Tasks = ({filter}) => {
         <Task task={task} key={task.name} />
       ))}
       <TaskInfo />
+      {/* <TaskInfoDesktop setFilter={setFilter} /> */}
     </ul>
   )
 }

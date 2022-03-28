@@ -25,7 +25,8 @@ const Body = () => {
     <main className="allTasks">
       <AddTask />
       <Tasks 
-      filter={filter} />
+      filter={filter}
+      setFilter={setFilter} />
       <TaskFilter 
       setFilter={setFilter} />
       <DragTask />

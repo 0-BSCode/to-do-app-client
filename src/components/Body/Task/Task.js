@@ -29,10 +29,7 @@ const Task = ({task}) => {
   }
 
   return (
-    <li 
-      className="task" 
-      draggable="true"
-      >
+    <li className="task">
       <label 
         className="task__container"
         htmlFor={task.name}
