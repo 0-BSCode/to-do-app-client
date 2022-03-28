@@ -31,11 +31,11 @@ const Task = ({task}) => {
   return (
     <li 
       className="task" 
+      draggable="true"
       >
       <label 
         className="task__container"
         htmlFor={task.name}
-        draggable="true"
       >
         <div className="task__info">
           <input 

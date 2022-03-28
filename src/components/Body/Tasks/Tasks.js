@@ -27,21 +27,70 @@ const Tasks = ({filter}) => {
         taskText[ctr].classList.remove("task__text--finished");
       }
     }
-  })
+    const draggables = document.querySelectorAll(".task");
+    const tasksElem = document.querySelector(".tasks");
+    
+    draggables.forEach(draggable => {
 
-  
-  const draggables = document.querySelectorAll(".task__container");
-  draggables.forEach(draggable => {
+      // Change styling of element to indicate when it's being dragged
+      draggable.addEventListener('dragstart', () => {
+        draggable.classList.add('task--dragging');
+      })
 
-    draggable.addEventListener('dragstart', () => {
-      draggable.style.opacity = '0.4';
+      draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('task--dragging');
+      })
+
+      // draggable.addEventListener('dragover', e => {
+      //   e.preventDefault();
+      //   const draggingElem = document.querySelector(".task__container--dragging");
+      //   console.log(draggingElem);
+      // })
+
     })
 
-    draggable.addEventListener('dragend', () => {
-      draggable.style.opacity = '1';
-    })
+    tasksElem.addEventListener('dragover', e => {
+      e.preventDefault();
+      // e.clientY returns current y position of mouse
+      const afterElem = getDragAfterElement(tasksElem, e.clientY);
+      const currentDrag = document.querySelector(".task--dragging");
 
+      // If there aren't any elements after element being dragged
+      if (afterElem == null) {
+        tasksElem.appendChild(currentDrag);
+      } else {
+        tasksElem.insertBefore(currentDrag, afterElem);
+      }
+    })
   })
+
+  function getDragAfterElement(tasks, y) {
+    // Return element that comes right after dragging element
+
+    // Get all draggable elements except for the one that's currently being dragged
+    const dragElems = [...tasks.querySelectorAll(".task:not(.task--dragging)")];
+
+    // closest = Draggable element that's currently closest to mouse
+    // child = Current draggable element we're iterating over
+    // second parameter = first value of closest
+    return dragElems.reduce((closest, child) => {
+      // Get bounding box of child
+      const box = child.getBoundingClientRect();
+      
+      // Get distance between center of box and mouse cursor
+      const offset = y - (box.top + box.height / 2);
+
+      // Only consider offsets above 0 bc it shows you're above the child
+      // and if current element is closer to mouse than current closest
+      if (offset < 0 && offset > closest.offset) {
+        return {offset: offset, element: child};
+      } else {
+        return closest;
+      }
+    }, {offset: Number.NEGATIVE_INFINITY}).element;
+
+    // Return only the closest element, not the entire object
+  }
 
   return (
     <ul
