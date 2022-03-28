@@ -1,9 +1,7 @@
 import React from 'react'
 import './styles.css';
-import { useSelector } from 'react-redux';
 
 const TaskFilter = ({setFilter}) => {
-  const tasks = useSelector(state => state.tasks);
 
   const handleClick = e => {
     e.preventDefault();
