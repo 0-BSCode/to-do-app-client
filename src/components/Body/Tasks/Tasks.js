@@ -54,10 +54,11 @@ const Tasks = ({filter}) => {
       // e.clientY returns current y position of mouse
       const afterElem = getDragAfterElement(tasksElem, e.clientY);
       const currentDrag = document.querySelector(".task--dragging");
+      const taskInfo = document.querySelector(".info");
 
       // If there aren't any elements after element being dragged
       if (afterElem == null) {
-        tasksElem.appendChild(currentDrag);
+        tasksElem.insertBefore(currentDrag, taskInfo);
       } else {
         tasksElem.insertBefore(currentDrag, afterElem);
       }
