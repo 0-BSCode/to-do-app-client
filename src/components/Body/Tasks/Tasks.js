@@ -28,6 +28,7 @@ const Tasks = ({filter, setFilter}) => {
         taskText[ctr].classList.remove("task__text--finished");
       }
     }
+    
     const draggables = document.querySelectorAll(".task");
     const tasksElem = document.querySelector(".tasks");
     
