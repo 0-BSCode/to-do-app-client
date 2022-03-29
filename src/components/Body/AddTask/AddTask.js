@@ -14,8 +14,14 @@ const AddTask = () => {
     tasks.forEach(task => {
       input.value == task.name? alreadyAdded = true: alreadyAdded = false;
     })
-    if (input.value != '' && !alreadyAdded) dispatch(Add(input.value));
+    if (input.value != '' && !alreadyAdded && input.value.trim() != '') dispatch(Add(input.value.trim()));
     input.value = '';
+  }
+
+  const handleKey = e => {
+    if (e.key == 'Enter') {
+      submitTask(e);
+    }
   }
 
   return (
@@ -28,6 +34,7 @@ const AddTask = () => {
         className="form__input"
         type="text" 
         placeholder="Create a new todo..."
+        onKeyPress={handleKey}
       />
     </label>
   )
