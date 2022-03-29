@@ -93,13 +93,18 @@ body {
   .tasks.tasks {
     border-radius: 0.3rem;
   }
+  
+  .task__checkbox.task__checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 
   .task__text.task__text {
     font-size: 0.7rem;
   }
 
   .task__input:checked ~ .task__checkbox {
-    background-size: 0.5rem, contain !important;
+    background-size: 0.6rem, contain !important;
   }
 
   .drag.drag {
@@ -142,12 +147,17 @@ body {
     border-radius: 0.3rem;
   }
 
+  .task__checkbox.task__checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
   .task__text.task__text {
     font-size: 0.7rem;
   }
 
   .task__input:checked ~ .task__checkbox {
-    background-size: 0.5rem, contain !important;
+    background-size: 0.6rem, contain !important;
   }
 
   .drag.drag {
@@ -190,12 +200,17 @@ body {
     border-radius: 0.3rem;
   }
 
+  .task__checkbox.task__checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
   .task__text.task__text {
     font-size: 0.7rem;
   }
 
   .task__input:checked ~ .task__checkbox {
-    background-size: 0.5rem, contain !important;
+    background-size: 0.6rem, contain !important;
   }
 
   .drag.drag {
@@ -238,12 +253,17 @@ body {
     border-radius: 0.3rem;
   }
 
+  .task__checkbox.task__checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
   .task__text.task__text {
     font-size: 0.7rem;
   }
 
   .task__input:checked ~ .task__checkbox {
-    background-size: 0.5rem, contain !important;
+    background-size: 0.6rem, contain !important;
   }
   
   .drag.drag {
