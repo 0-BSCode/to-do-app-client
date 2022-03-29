@@ -107,8 +107,12 @@ body {
     background-size: 0.6rem, contain !important;
   }
 
-  .drag.drag {
-    font-size: 0.5rem;
+  .task__delete-btn {
+    display: none;
+  }
+
+  .task__container:hover > .task__delete-btn {
+    display: block;
   }
 
   .info--desktop.info--desktop {
@@ -118,6 +122,10 @@ body {
   .info.info,
   .filter.filter {
     display: none;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
   }
 }
 
@@ -160,8 +168,12 @@ body {
     background-size: 0.6rem, contain !important;
   }
 
-  .drag.drag {
-    font-size: 0.5rem;
+  .task__delete-btn {
+    display: none;
+  }
+
+  .task__container:hover > .task__delete-btn {
+    display: block;
   }
 
   .info--desktop.info--desktop {
@@ -171,6 +183,10 @@ body {
   .info.info,
   .filter.filter {
     display: none;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
   }
 }
 
@@ -213,8 +229,12 @@ body {
     background-size: 0.6rem, contain !important;
   }
 
-  .drag.drag {
-    font-size: 0.5rem;
+  .task__delete-btn {
+    display: none;
+  }
+
+  .task__container:hover > .task__delete-btn {
+    display: block;
   }
 
   .info--desktop.info--desktop {
@@ -224,6 +244,10 @@ body {
   .info.info,
   .filter.filter {
     display: none;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
   }
 }
 
@@ -265,9 +289,13 @@ body {
   .task__input:checked ~ .task__checkbox {
     background-size: 0.6rem, contain !important;
   }
-  
-  .drag.drag {
-    font-size: 0.5rem;
+
+  .task__delete-btn {
+    display: none;
+  }
+
+  .task__container:hover > .task__delete-btn {
+    display: block;
   }
 
   .info--desktop.info--desktop {
@@ -277,5 +305,9 @@ body {
   .info.info,
   .filter.filter {
     display: none;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
   }
 }
