@@ -18,7 +18,7 @@ const TaskInfo = () => {
   return (
     <li className="info">
       <p className="info__left">
-        {tasks.filter(task => !task.finished).length} items left
+        {tasks.filter(task => !task.finished).length} {tasks.filter(task => !task.finished).length == 1? 'item': 'items'} left
       </p>
       <button 
         className="info__clear"

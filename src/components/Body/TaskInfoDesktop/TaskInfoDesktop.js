@@ -24,7 +24,7 @@ const TaskInfoDesktop = ({setFilter}) => {
   return (
     <li className="info--desktop">
       <p className="info__left--desktop">
-        {tasks.filter(task => !task.finished).length} items left
+        {tasks.filter(task => !task.finished).length} {tasks.filter(task => !task.finished).length == 1? 'item': 'items'} left
       </p>
       <section className="filter--desktop">
         <button 
