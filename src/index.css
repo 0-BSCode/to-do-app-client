@@ -106,3 +106,120 @@ body {
     display: none;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    font-size: 13px;
+    --bg-image-light: url("./images/bg-desktop-light.jpg");
+    --bg-image-dark: url("./images/bg-desktop-dark.jpg");
+  }
+
+  .App.App {
+    width: 21.5rem;
+    padding-top: 3.1rem;
+  }
+
+  .form.form {
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .tasks.tasks {
+    border-radius: 0.3rem;
+  }
+
+  .task__text.task__text {
+    font-size: 0.7rem;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
+  }
+
+  .info--desktop.info--desktop {
+    display: flex;
+  }
+
+  .info.info,
+  .filter.filter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    font-size: 18px;
+    --bg-image-light: url("./images/bg-desktop-light.jpg");
+    --bg-image-dark: url("./images/bg-desktop-dark.jpg");
+  }
+
+  .App.App {
+    width: 21.5rem;
+    padding-top: 3.1rem;
+  }
+
+  .form.form {
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .tasks.tasks {
+    border-radius: 0.3rem;
+  }
+
+  .task__text.task__text {
+    font-size: 0.7rem;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
+  }
+
+  .info--desktop.info--desktop {
+    display: flex;
+  }
+
+  .info.info,
+  .filter.filter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 25px;
+    --bg-image-light: url("./images/bg-desktop-light.jpg");
+    --bg-image-dark: url("./images/bg-desktop-dark.jpg");
+  }
+
+  .App.App {
+    width: 21.5rem;
+    padding-top: 3.1rem;
+  }
+
+  .form.form {
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .tasks.tasks {
+    border-radius: 0.3rem;
+  }
+
+  .task__text.task__text {
+    font-size: 0.7rem;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
+  }
+
+  .info--desktop.info--desktop {
+    display: flex;
+  }
+
+  .info.info,
+  .filter.filter {
+    display: none;
+  }
+}
