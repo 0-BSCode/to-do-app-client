@@ -142,7 +142,7 @@ I want to learn how to incorporate other tools for Frontend Development such as 
 
 ### Useful resources
 
-- [Web Dev Simplified Drag and Drop Tutorial](hhttps://www.youtube.com/watch?v=jfYWwQrtzzY) - This tutorial taught me how to implement the drag and drop feature functionality used in this challenge. I recommend this channel's other videos as well because they're really informative and comprehensive.
+- [Web Dev Simplified Drag and Drop Tutorial](https://www.youtube.com/watch?v=jfYWwQrtzzY) - This tutorial taught me how to implement the drag and drop feature functionality used in this challenge. I recommend this channel's other videos as well because they're really informative and comprehensive.
 - [Dev Ed Redux Tutorial](https://www.youtube.com/watch?v=CVpUuw9XSjY) - This amazing video taught me everything I know about Redux so far. It's perfect for beginners (like me) and it also shows how to implement Redux in React projects.
 - [JavaScript Mastery MERN Stack Tutorials](https://www.youtube.com/watch?v=ngc9gnGgUdA&list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu) - This playlist showed me how all the different technologies in the MERN stack work and fit together to create a fully functioning website. These tutorials also taught me how to organize my project files so that they're easily scalable and are easy to manage.
 - [CSS Tricks](https://css-tricks.com/) - This is a great website that has saved me a lot of times whenever I get confused on how to use flexbox and grid.
