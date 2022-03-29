@@ -7,7 +7,6 @@ import {useSelector} from 'react-redux'
 import {useState} from 'react'
 
 const Body = () => {
-  const tasks = useSelector(state => state.tasks);
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
@@ -17,6 +16,15 @@ const Body = () => {
         filterBtn.classList.add("filter__btn--selected");
       } else {
         filterBtn.classList.remove("filter__btn--selected");
+      }
+    })
+
+    const filterBtnsDesktop = document.querySelectorAll(".filter__btn--desktop");
+    filterBtnsDesktop.forEach(filterBtn => {
+      if (filterBtn.textContent == filter) {
+        filterBtn.classList.add("filter__btn--desktop--selected");
+      } else {
+        filterBtn.classList.remove("filter__btn--desktop--selected");
       }
     })
   })

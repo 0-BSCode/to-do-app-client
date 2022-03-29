@@ -2,7 +2,6 @@ import React from 'react'
 import './styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import {Delete} from '../../../actions/tasks';
-import TaskFilter from '../TaskFilter/TaskFilter';
 
 const TaskInfoDesktop = ({setFilter}) => {
   const tasks = useSelector(state => state.tasks);

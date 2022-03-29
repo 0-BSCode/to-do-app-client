@@ -42,12 +42,6 @@ const Tasks = ({filter, setFilter}) => {
         draggable.classList.remove('task--dragging');
       })
 
-      // draggable.addEventListener('dragover', e => {
-      //   e.preventDefault();
-      //   const draggingElem = document.querySelector(".task__container--dragging");
-      //   console.log(draggingElem);
-      // })
-
     })
 
     tasksElem.addEventListener('dragover', e => {
