@@ -100,7 +100,7 @@ const Tasks = ({filter, setFilter}) => {
       {filterTasks.map(task => (
         <Task task={task} key={task.name} />
       ))}
-      {/* <TaskInfo /> */}
+      <TaskInfo />
       <TaskInfoDesktop setFilter={setFilter} />
     </ul>
   )

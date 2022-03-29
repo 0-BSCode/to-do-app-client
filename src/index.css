@@ -96,4 +96,13 @@ body {
   .drag.drag {
     font-size: 0.5rem;
   }
+
+  .info--desktop.info--desktop {
+    display: flex;
+  }
+
+  .info.info,
+  .filter.filter {
+    display: none;
+  }
 }

@@ -27,8 +27,8 @@ const Body = () => {
       <Tasks 
       filter={filter}
       setFilter={setFilter} />
-      {/* <TaskFilter 
-      setFilter={setFilter} /> */}
+      <TaskFilter 
+      setFilter={setFilter} />
       <DragTask />
     </main>
   )

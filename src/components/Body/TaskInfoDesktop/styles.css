@@ -1,6 +1,6 @@
 .info--desktop {
     height: 2.5rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding-inline: 1.1rem;
