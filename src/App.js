@@ -18,6 +18,9 @@ export default App;
 
 /*
 
+TODO
+1. Box shadow around card
+
 LEARNINGS:
 1. Color theme switching
 2. useEffect() alternative for updating variables
