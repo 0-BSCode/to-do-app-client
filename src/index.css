@@ -67,3 +67,33 @@ body {
     font-size: 22px;
   }
 }
+
+@media screen and (min-width: 512px) and (max-width: 767px) {
+  :root {
+    font-size: 9px;
+    --bg-image-light: url("./images/bg-desktop-light.jpg");
+    --bg-image-dark: url("./images/bg-desktop-dark.jpg");
+  }
+
+  .App.App {
+    width: 21.5rem;
+    padding-top: 3.1rem;
+  }
+
+  .form.form {
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .tasks.tasks {
+    border-radius: 0.3rem;
+  }
+
+  .task__text.task__text {
+    font-size: 0.7rem;
+  }
+
+  .drag.drag {
+    font-size: 0.5rem;
+  }
+}

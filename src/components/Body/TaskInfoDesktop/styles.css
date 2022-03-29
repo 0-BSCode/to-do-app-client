@@ -1,5 +1,5 @@
 .info--desktop {
-    height: 3.2rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +10,7 @@
 
 .info__left--desktop,
 .info__clear--desktop {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     letter-spacing: 0.01rem;
     border: none;
     background: none;
@@ -28,6 +28,7 @@
     border-radius: 0.4rem;
     display: flex;
     justify-content: space-between;
+    margin-left: 1rem;
 }
 
 .filter__btn--desktop {
@@ -35,10 +36,10 @@
     background: none;
     font-family: Josefin;
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
     color: var(--taskinfo-text-color);
     letter-spacing: 0.01rem;
-    margin-inline: 2rem;
+    margin-inline: 0.4rem;
 }
 
 .filter__btn--desktop:hover {
